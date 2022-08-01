@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/vkrasnov/dictator"
 	"io/ioutil"
 	"log"
 	"math"
@@ -12,6 +11,8 @@ import (
 	"runtime"
 	"strconv"
 	"strings"
+
+	"github.com/doubleoctopus/dictator"
 )
 
 var windowSize = flag.Int("windowsize", 16384, "Window size used by the compression")
@@ -54,7 +55,6 @@ func main() {
 		printUsage()
 		return
 	}
-
 
 	t, err := strconv.ParseFloat(strings.TrimSuffix(*threshold, "%"), 64)
 	if err != nil {

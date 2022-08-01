@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/doubleoctopus/dictator"
+	"github.com/sdoelad/dictator"
 )
 
 var windowSize = flag.Int("windowsize", 16384, "Window size used by the compression")

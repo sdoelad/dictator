@@ -1,3 +1,3 @@
-module github.com/doubleoctopus/go-common
+module github.com/sdoelad/dictator
 
 go 1.15
